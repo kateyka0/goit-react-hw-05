@@ -20,13 +20,13 @@ const Reviews = () => {
       }
     };
     getReviews();
-  }, []);
+  }, [movieId]);
 
   return (
     <div>
       <h3 className={css.title}>Movie Reviews</h3>
       <ul className={css.list}>
-        {(reviews !== null && reviews.length) === 0 && (
+        {reviews !== null && reviews.length === 0 && (
           <p>This movie don't have any reviews</p>
         )}
         {reviews !== null &&

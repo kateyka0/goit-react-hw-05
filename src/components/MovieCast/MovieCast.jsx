@@ -20,7 +20,7 @@ const MovieCast = () => {
       }
     };
     getCast();
-  }, []);
+  }, [movieId]);
 
   return (
     <div>
